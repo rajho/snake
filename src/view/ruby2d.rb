@@ -37,7 +37,7 @@ module View
 		end
 		
 		def render_snake(state)
-			@snake_positions.each (&:remove ) if @snake_positions
+			@snake_positions.each( &:remove ) if @snake_positions
 
 			extend Ruby2D::DSL
 			snake = state.snake
